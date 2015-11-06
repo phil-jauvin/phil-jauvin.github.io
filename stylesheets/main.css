@@ -1,0 +1,47 @@
+.index{
+  background: url("../images/skyline.jpg");
+  background-size: cover;
+}
+
+.main{
+  background: url("../images/city.jpg");
+}
+
+@font-face {
+    font-family: "Tube";
+    src: url("Tube.ttf");
+}
+
+h1 {
+    font-family: "Tube",sans-serif;
+    text-align:left;
+}
+
+h2 {
+    font-family: "Tube",sans-serif;
+    text-align:left;
+    color:floralwhite;
+}
+
+a{
+  color:floralwhite;
+}
+
+a:hover{
+  color:floralwhite;
+}
+
+
+i{
+  color:rgb(85, 119, 119);
+}
+
+i:hover{
+  color:rgb(255, 242, 232);
+}
+
+.presentation{
+  background-color: white;
+  margin-top: 50px;
+  min-height: 400px;
+}
