@@ -15,6 +15,7 @@
 h1 {
     font-family: "Tube",sans-serif;
     text-align:left;
+    color:floralwhite;
 }
 
 h2 {
@@ -44,4 +45,8 @@ i:hover{
   background-color: white;
   margin-top: 50px;
   min-height: 400px;
+}
+
+.buns{
+  background-color:rgba(85, 102, 102,0.8);
 }
