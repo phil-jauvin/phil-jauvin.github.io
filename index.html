@@ -24,7 +24,7 @@
 
   </head>
 
-  <body class="index">
+  <body class="index" onload="thing">
 
     <div class="jumbotron buns" style="min-height:100vh;">
 
@@ -66,9 +66,9 @@
         </div>
 
         <div class="row" align="center">
-          <img src="images/mean_stack_image.svg" style="width:200px;height:200px;margin:40px 60px 40px 60px;"></img>
-          <img src="images/bootstrap.svg" style="width:200px;height:200px;margin:40px 60px 40px 60px;"></img>
-          <img src="images/jquery.svg" style="width:200px;height:200px;margin:40px 60px 40px 60px;"></img>
+          <img data-sr="wait 0.12s"  src="images/mean_stack_image.svg" style="width:200px;height:200px;margin:40px 60px 40px 60px;"></img>
+          <img data-sr="wait 0.12s"  src="images/bootstrap.svg" style="width:200px;height:200px;margin:40px 60px 40px 60px;"></img>
+          <img data-sr="wait 0.12s"  src="images/jquery.svg" style="width:200px;height:200px;margin:40px 60px 40px 60px;"></img>
         </div>
 
       </div>
@@ -89,9 +89,9 @@
       <div class="container col-sm-offset-1 col-sm-10 presentation" style="margin-bottom:50px;background-color:rgba(170,187,187,0.8)" id="social">
 
         <div class="row" align="center" style="margin-top: 2.5%;">
-          <i class="fa fa-angellist fa-5x" style="font-size:200px;margin:40px 60px 40px 60px;"></i>
-          <i class="fa fa-github fa-5x" style="font-size:200px;margin:40px 60px 40px 60px;"></i>
-          <i class="fa fa-twitter fa-5x" style="font-size:200px;margin:40px 60px 40px 60px;"></i>
+          <i data-sr="wait 0.12s"  class="fa fa-angellist fa-5x" style="font-size:200px;margin:40px 60px 40px 60px;"></i>
+          <i data-sr="wait 0.12s"  class="fa fa-github fa-5x" style="font-size:200px;margin:40px 60px 40px 60px;"></i>
+          <i data-sr="wait 0.12s"  class="fa fa-twitter fa-5x" style="font-size:200px;margin:40px 60px 40px 60px;"></i>
         </div>
 
       </div>
@@ -102,6 +102,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src='js/scrollReveal.min.js'></script>
+    <script>
+
+      window.sr = new scrollReveal();
+
+    </script>
 
   </body>
 
