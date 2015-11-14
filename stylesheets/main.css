@@ -8,30 +8,14 @@
   background-size: cover;
 }
 
-.main{
-  background: url("../images/city.jpg");
-}
-
-h1 {
+h1,h2 {
     font-family: "Tube",sans-serif;
-    text-align:center;
     color:floralwhite;
 }
 
-h2 {
-    font-family: "Tube",sans-serif;
-    text-align:left;
-    color:floralwhite;
-}
-
-a{
+a,a:hover{
   color:floralwhite;
 }
-
-a:hover{
-  color:floralwhite;
-}
-
 
 i{
   color:rgb(85, 119, 119);
@@ -42,11 +26,6 @@ i:hover{
 }
 
 .presentation{
-  background-color: white;
   margin-top: 50px;
   min-height: 400px;
-}
-
-.buns{
-  background-color:rgba(85, 102, 102,0.8);
 }

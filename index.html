@@ -18,6 +18,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <link href="stylesheets/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -26,7 +27,7 @@
 
   <body class="index" onload="thing">
 
-    <div class="jumbotron buns" style="min-height:100vh;">
+    <div class="jumbotron" style="min-height:100vh;background-color:rgba(85, 102, 102,0.8);">
 
       <div class="container">
         <div class="row col-sm-8">
@@ -36,33 +37,37 @@
 
       <div class="container">
 
-        <div class="row col-sm-4">
-          <h2><a href="#about"></i>About me</a></h2>
-          <h2><a href="#tools">Stuff I use</a></h2>
-          <h2><a href="#projects">Projects</a></h2>
-          <h2><a href="#social">Social</a></h2>
+        <div class="row col-sm-4" style="text-align:left;">
+          <h2 id="aboutbutton"><a href="#about">About me</a></h2>
+          <h2 id="toolbutton"><a href="#tools">Tools I use</a></h2>
+          <h2 id="projectbutton"><a href="#projects">Projects</a></h2>
+          <h2 id="socialbutton"><a href="#social">Social</a></h2>
         </div>
 
       </div>
 
       </div>
 
-<!-- <video src="http://giant.gfycat.com/AjarRedHind.webm" width="500px" autoplay loop> -->
-
     <div>
-      <div class="container col-sm-offset-1 col-sm-10 presentation" style="background-color:rgba(153, 153, 153,0.8)" id="about">
+      <div class="container col-sm-offset-1 col-sm-10 presentation" style="background-color:rgba(153, 153, 153,0.8);text-align:center;" id="about">
 
         <div class="row-content">
           <h1 style="color:floralwhite">About me</h1>
         </div>
 
+        <div class="row" align="center">
+          <h2 data-sr="wait 0.12s" style="margin:20px 60px 20px 60px;text-align:center;">I'm a Developer based in Ottawa, Canada</h2>
+          <img data-sr="wait 0.12s"  src="images/map.png" style="width:400px;margin:20px 60px 20px 60px;"></img>
+          <h2 data-sr="wait 0.12s" style="margin:20px 60px 40px 60px;text-align:center;">Right now I'm looking for an entry level Web Developer job in my city, but I'm open to remote jobs too</h2>
+        </div>
+
       </div>
 
 
-      <div class="container col-sm-offset-1 col-sm-10 presentation" style="background-color:rgba(170,204,204,0.8)" id="tools">
+      <div class="container col-sm-offset-1 col-sm-10 presentation" style="background-color:rgba(170,204,204,0.8);text-align:center;" id="tools">
 
         <div class="row-content">
-          <h1>Tools</h1>
+          <h1>Tools I use</h1>
         </div>
 
         <div class="row" align="center">
@@ -73,7 +78,7 @@
 
       </div>
 
-      <div class="container col-sm-offset-1 col-sm-10 presentation" style="background-color:rgba(204,221,221,0.8)" id="projects">
+      <div class="container col-sm-offset-1 col-sm-10 presentation" style="background-color:rgba(204,221,221,0.8);text-align:center;" id="projects">
 
         <div class="row-content">
           <h1 style="color:floralwhite">Cool projects</h1>
@@ -86,7 +91,7 @@
       </div>
 
 
-      <div class="container col-sm-offset-1 col-sm-10 presentation" style="margin-bottom:50px;background-color:rgba(170,187,187,0.8)" id="social">
+      <div class="container col-sm-offset-1 col-sm-10 presentation" style="margin-bottom:50px;background-color:rgba(170,187,187,0.8);text-align:center;" id="social">
 
         <div class="row" align="center" style="margin-top: 2.5%;">
           <i data-sr="wait 0.12s"  class="fa fa-angellist fa-5x" style="font-size:200px;margin:40px 60px 40px 60px;"></i>
@@ -99,9 +104,6 @@
 
 
     <h1 style="text-align:center;">hello@philjauvin.xyz</h1>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script src='js/scrollReveal.min.js'></script>
     <script>
