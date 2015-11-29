@@ -4,8 +4,7 @@
 }
 
 .index{
-  background: url("../images/skyline.jpg");
-  background-size: cover;
+  background-color: rgb(84, 136, 87);
 }
 
 h1,h2 {
@@ -18,7 +17,7 @@ a,a:hover{
 }
 
 i{
-  color:rgb(85, 119, 119);
+  color:rgb(65, 103, 105);
 }
 
 i:hover{
