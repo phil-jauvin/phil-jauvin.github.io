@@ -4,7 +4,7 @@
 }
 
 .index{
-  background-color: rgb(84, 136, 87);
+  background-color: rgb(238, 238, 221);
 }
 
 h1,h2 {
@@ -17,11 +17,11 @@ a,a:hover{
 }
 
 i{
-  color:rgb(65, 103, 105);
+  color:rgb(106, 115, 137);
 }
 
 i:hover{
-  color:rgb(255, 242, 232);
+  color:rgb(238, 238, 221);
 }
 
 .bg-parl{
