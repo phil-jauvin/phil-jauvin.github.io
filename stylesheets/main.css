@@ -24,6 +24,11 @@ i:hover{
   color:rgb(255, 242, 232);
 }
 
+.bg-parl{
+  background-image: url("../images/ottawa.jpg");
+  background-size: cover;
+}
+
 .presentation{
   margin-top: 50px;
   min-height: 400px;
