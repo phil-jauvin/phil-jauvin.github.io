@@ -3,8 +3,8 @@
     src: url("Tube.ttf");
 }
 
-.index{
-  background-color: rgb(238, 238, 221);
+body{
+  background-color: rgb(238, 238, 221)
 }
 
 h1,h2 {
@@ -32,4 +32,7 @@ i:hover{
 .presentation{
   margin-top: 50px;
   min-height: 400px;
+  background-color:rgb(204, 187, 153);
+  text-align:center;
+  color:floralwhite;
 }
