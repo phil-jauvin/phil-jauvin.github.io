@@ -24,6 +24,10 @@ i:hover{
   color:rgb(238, 238, 221);
 }
 
+.thumb-hover:hover{
+  background-color: rgb(106, 115, 137);
+}
+
 .bg-parl{
   background-image: url("../images/ottawa.jpg");
   background-size: cover;
