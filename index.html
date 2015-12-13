@@ -9,16 +9,33 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Phil Jauvin</title>
 
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link href="stylesheets/main.css" rel="stylesheet">
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    <!-- Smooth scrolling -->
+    <script>
+    $(document).ready(function(){
+
+      $('a').click(function(){
+          $('html, body').animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 800);
+          return false;
+      });
+
+    });
+    </script>
 
   </head>
 
@@ -105,10 +122,10 @@
     </div>
 
     <script src='js/scrollReveal.min.js'></script>
+
+    <!-- Scroll reveal  -->
     <script>
-
       window.sr = new scrollReveal();
-
     </script>
 
   </body>
