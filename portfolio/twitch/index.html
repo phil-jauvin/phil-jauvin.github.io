@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Twitch Streams</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <!-- JQuery script -->
+    <script src="twitch.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="container" style="margin-top:50px;">
+
+      <h1 class="page-header">Who's streaming on Twitch ?  <a href=><i class="fa fa-github"></i></a>  <a href="http://www.philjauvin.xyz"><i class="fa fa-user"></i></a> </h1>
+      <button id="update-button" class="btn btn-primary" style="margin:10px;width:75px;"><i class="fa fa-refresh fa-2x"></i></button>
+
+      <form class="form-inline" id="form">
+        <div class="form-group">
+          <label for="streamer">Add a streamer <label>
+          <input type="text" name="streamer" id="streamer" class="form-control" placeholder="thenewboston">
+          <button type="submit" class="btn btn-info"><i class="fa fa-plus"></i></button>
+        </div>
+      </form>
+
+      <div id="streams">
+        <div id="example">
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
