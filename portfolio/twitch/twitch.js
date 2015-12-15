@@ -17,7 +17,7 @@ $("document").ready(function(){
 
     // Page will refresh when the button with ID updater is clicked.
     $("#update-button").on("click",update);
-    
+
 
     // This function takes care of form data once we submit it.
     $("form").on("submit",function(event){

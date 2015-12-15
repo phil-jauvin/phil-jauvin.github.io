@@ -29,16 +29,15 @@
 
     <div class="container" style="margin-top:50px;">
 
-      <h1 class="page-header">Who's streaming on Twitch ?  <a href="https://github.com/phil-jauvin/phil-jauvin.github.io/tree/master/portfolio/twitch"><i class="fa fa-github"></i></a>  <a href="http://www.philjauvin.xyz"><i class="fa fa-user"></i></a> </h1>
-      <button id="update-button" class="btn btn-primary" style="margin:10px;width:75px;"><i class="fa fa-refresh fa-2x"></i></button>
+      <h1 class="page-header">Who's streaming on Twitch ?  <div><a href="https://github.com/phil-jauvin/phil-jauvin.github.io/tree/master/portfolio/twitch"><i class="fa fa-github"></i></a>  <a href="http://www.philjauvin.xyz"><i class="fa fa-user"></i></a></div> </h1>
 
-      <form class="form-inline" id="form">
-        <div class="form-group">
-          <label for="streamer">Add a streamer <label>
-          <input type="text" name="streamer" id="streamer" class="form-control" placeholder="thenewboston">
-          <button type="submit" class="btn btn-info"><i class="fa fa-plus"></i></button>
-        </div>
+
+      <form style="margin-bottom:12px;" class="form-inline">
+        <input type="text" name="streamer" id="streamer" class="form-control" placeholder="Enter a twitch name">
+        <button id="plus" type="submit" class="btn btn-info" style="margin:10px;">Add to list</button>
       </form>
+
+      <button id="update-button" class="btn btn-primary" style="margin:0px 0px 20px 0px;width:75px;"><i class="fa fa-refresh fa-2x"></i></button>
 
       <div id="streams">
         <div id="example">
