@@ -26,9 +26,16 @@ $("document").ready(function(){
 
       event.preventDefault(); // This prevents page refresh.
 
-      // Format the string and push it to channels.
+      // Extract the channel name from the form.
       var streamer = $(this).serialize().split("=")[1];
-      channels.push(streamer);
+
+      // If the channel is already in the array, alert the user.
+      if(channels.indexOf(streamer) != -1){
+        alert(streamer+" is already in your list");
+        return 1;
+      }
+
+      channels.push(streamer.toLowerCase());
 
       update();
 
@@ -40,7 +47,7 @@ $("document").ready(function(){
       channels.forEach(function(channel){
 
         // Making sure the channel is a string.
-        channel = String(channel);
+        channel = String(channel).toLowerCase();
 
         $.getJSON("https://api.twitch.tv/kraken/streams/"+channel+".json",function(json){
 
@@ -58,7 +65,7 @@ $("document").ready(function(){
             html += "<div class='well' style='background:lightgreen;'>";
             html += channel + " is online and streaming "+String(json.stream.game);
 
-            html += "<a style='float:right;' href="+json.stream.channel.url+"><i class='fa fa-desktop fa-2x'></i></a>"
+            html += "<a style='float:right;' href="+json.stream.channel.url+"><i class='fa fa-desktop fa-2x'></i></a>";
 
           }
 
