@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "Tube";
-    src: url("Tube.ttf");
-}
-
 body{
   background-color: rgb(238, 238, 221);
 }
@@ -27,12 +22,25 @@ i:hover{
   background-color: rgb(106, 115, 137);
 }
 
+.fa{
+  font-size:200px;
+  margin:40px 60px 40px 60px;
+}
+
+.jumbotron{
+  color:floralwhite;
+  text-align:left;
+  min-height:100vh;
+  background-color:rgba(153, 136, 119,0.8);
+}
+
 .bg-parl{
   background-image: url("../images/ottawa.jpg");
   background-size: cover;
+  min-height:100vh;
 }
 
-.presentation{
+.resume{
   min-height: 500px;
   text-align:center;
 }
@@ -40,4 +48,5 @@ i:hover{
 .p-footer{
   background-color: rgb(106, 115, 137);
   min-height: 200px;
+  margin-top:50px;
 }
