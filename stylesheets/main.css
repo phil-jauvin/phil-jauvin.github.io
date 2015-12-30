@@ -4,12 +4,11 @@
 }
 
 body{
-  background-color: rgb(238, 238, 221)
+  background-color: rgb(238, 238, 221);
 }
 
 h1,h2 {
-    font-family: "Tube",sans-serif;
-    color:floralwhite;
+    font-family: 'Kanit', sans-serif;
 }
 
 a,a:hover{
@@ -34,9 +33,6 @@ i:hover{
 }
 
 .presentation{
-  margin-top: 50px;
-  min-height: 400px;
-  background-color:rgb(204, 187, 153);
+  min-height: 500px;
   text-align:center;
-  color:floralwhite;
 }
