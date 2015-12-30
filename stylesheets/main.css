@@ -36,3 +36,8 @@ i:hover{
   min-height: 500px;
   text-align:center;
 }
+
+.p-footer{
+  background-color: rgb(106, 115, 137);
+  min-height: 200px;
+}

@@ -25,18 +25,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
     <!-- Smooth scrolling -->
-    <script>
-    $(document).ready(function(){
-
-      $('a').click(function(){
-          $('html, body').animate({
-              scrollTop: $( $.attr(this, 'href') ).offset().top
-          }, 800);
-          return false;
-      });
-
-    });
-    </script>
+    <script src="./js/anchorscroll.js"></script>
 
   </head>
 
@@ -111,7 +100,7 @@
       </div>
 
 
-      <div class="container-fluid col-sm-12 presentation"  style="margin-bottom:50px;background-color:rgb(204, 187, 153);" id="social">
+      <div class="container-fluid col-sm-12 presentation"  style="background-color:rgb(204, 187, 153);" id="social">
 
         <div align="center" style="vertical-align:center;">
           <a href="https://angel.co/phil-jauvin"><i class="fa fa-angellist fa-5x" style="font-size:200px;margin:40px 60px 40px 60px;"></i></a>
@@ -120,14 +109,16 @@
         </div>
 
       </div>
+
+      <div class="container-fluid col-sm-12 p-footer" style="margin-top:50px;s">
+
+        <div align="center" style="vertical-align:center;">
+
+        </div>
+
+      </div>
+
     </div>
-
-    <script src='js/scrollReveal.min.js'></script>
-
-    <!-- Scroll reveal  -->
-    <script>
-      window.sr = new scrollReveal();
-    </script>
 
   </body>
 
