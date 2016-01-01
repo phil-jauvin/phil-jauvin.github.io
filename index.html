@@ -9,19 +9,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Phil Jauvin</title>
 
-
+    <!-- Font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link href="stylesheets/main.css" rel="stylesheet">
+
+    <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet' type='text/css'>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-
+    <!-- Google maps -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 
     <!-- Smooth scrolling -->
@@ -54,6 +56,7 @@
     </div>
 
     <div>
+
       <div class="container-fluid col-sm-12 resume" id="about">
 
         <div class="col-sm-12">
@@ -67,29 +70,27 @@
           </div>
         </div>
 
-
-
       </div>
 
 
       <div class="container-fluid col-sm-12 resume" id="tools" style="background-color: rgb(106, 115, 137);color:floralwhite">
 
-        <div class="container col-sm-12" style="margin-top:20px;">
+          <div class="container col-sm-12" style="margin-top:20px;">
 
-          <div style="vertical-align:middle;" class="col-sm-6">
-            <h2>
-              My apps mainly use the MEAN stack (MongoDB, Express.Js, Angular.Js, Node.Js)
-            </h2>
+            <div style="vertical-align:middle;" class="col-sm-6">
+              <h2>
+                My apps mainly use the MEAN stack (MongoDB, Express.Js, Angular.Js, Node.Js)
+              </h2>
+            </div>
+
+            <img class="img-responsive col-sm-6" src="./images/tech_logo.svg" style="vertical-align:middle;">
+
           </div>
 
-          <img class="img-responsive col-sm-6" src="./images/tech_logo.svg" style="vertical-align:middle;">
-
-        </div>
-
-        <div class="col-sm-12">
-          <h2>I'm also familiar with Bootstrap and JQuery</h2>
-          <h2>You should <u><a href="">check out my Resume</a></u></h2>
-        </div>
+          <div class="col-sm-12" style="margin-bottom:20px;">
+            <h2>I'm also familiar with Bootstrap and JQuery</h2>
+            <h2>You should <u><a href="">check out my Resume</a></u></h2>
+          </div>
 
       </div>
 
@@ -118,19 +119,28 @@
           <a href="https://twitter.com/PhilJauvin"><i class="fa fa-twitter fa-5x"></i></a>
         </div>
 
-      </div>
-
-      <div class="container-fluid col-sm-12 p-footer">
-
-        <div align="center" style="vertical-align:center;">
-
+        <div>
+          <form action="http://formspree.io/philippejauvin@gmail.com" method="POST">
+          <input type="text" name="name">
+          <input type="email" name="_replyto">
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+          <input type="submit" value="Send">
+          </form>
         </div>
 
       </div>
 
+
+      <div class="container-fluid col-sm-12 p-footer">
+
+        <div align="center" style="vertical-align:center;">
+        </div>
+
+      </div>
+
+
     </div>
 
   </body>
-
 
 </html>
