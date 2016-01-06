@@ -11,7 +11,7 @@ a,a:hover{
 }
 
 i{
-  color:rgb(106, 115, 137);
+  color:rgb(204, 187, 153);
 }
 
 i:hover{
@@ -23,8 +23,8 @@ i:hover{
 }
 
 .fa{
-  font-size:200px;
-  margin:40px 60px 40px 60px;
+  font-size:50px;
+  margin:40px 30px 40px 30px;
 }
 
 .jumbotron{
@@ -40,8 +40,18 @@ i:hover{
   min-height:100vh;
 }
 
-.resume{
+#about,#tools,#projects,#contact{
   text-align:center;
+}
+
+.contact-form{
+  background-color: rgb(233, 215, 177);
+  border:1px ridge;
+}
+
+.resume{
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .p-footer{

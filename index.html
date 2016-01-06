@@ -47,7 +47,7 @@
           <h2 id="aboutbutton"><a href="#about">About me</a></h2>
           <h2 id="toolbutton"><a href="#tools">Tools I use</a></h2>
           <h2 id="projectbutton"><a href="#projects">Projects</a></h2>
-          <h2 id="socialbutton"><a href="#social">Social</a></h2>
+          <h2 id="socialbutton"><a href="#contact">Contact</a></h2>
         </div>
 
       </div>
@@ -57,9 +57,9 @@
 
     <div>
 
-      <div class="container-fluid col-sm-12 resume" id="about">
+      <div class="container-fluid col-sm-12" id="about">
 
-        <div class="col-sm-12">
+        <div class="col-sm-12 resume">
           <div class="col-sm-9">
             <h2>I'm a Developer who likes to build dynamic websites and apps.</h2>
             <h2>Right now I'm looking for an entry level Developer job (local or remote) </h2>
@@ -73,59 +73,81 @@
       </div>
 
 
-      <div class="container-fluid col-sm-12 resume" id="tools" style="background-color: rgb(106, 115, 137);color:floralwhite">
+      <div class="container-fluid col-sm-12" id="tools" style="background-color: rgb(106, 115, 137);color:floralwhite">
 
-          <div class="container col-sm-12" style="margin-top:20px;">
+          <div class="resume">
+            <div class="container col-sm-12" style="margin-top:20px;">
 
-            <div style="vertical-align:middle;" class="col-sm-6">
-              <h2>
-                My apps mainly use the MEAN stack (MongoDB, Express.Js, Angular.Js, Node.Js)
-              </h2>
+              <div style="vertical-align:middle;" class="col-sm-6">
+                <h2>
+                  My apps mainly use the MEAN stack (MongoDB, Express.Js, Angular.Js, Node.Js)
+                </h2>
+              </div>
+
+              <img class="img-responsive col-sm-6" src="./images/tech_logo.svg" style="vertical-align:middle;">
+
             </div>
 
-            <img class="img-responsive col-sm-6" src="./images/tech_logo.svg" style="vertical-align:middle;">
-
-          </div>
-
-          <div class="col-sm-12" style="margin-bottom:20px;">
-            <h2>I'm also familiar with Bootstrap and JQuery</h2>
-            <h2>You should <u><a href="">check out my Resume</a></u></h2>
+            <div class="col-sm-12" style="margin-bottom:20px;">
+              <h2>I'm also familiar with Bootstrap and JQuery</h2>
+              <h2>You should <u><a href="">check out my Resume</a></u></h2>
+            </div>
           </div>
 
       </div>
 
-      <div class="container-fluid col-sm-12 resume"  id="projects">
+      <div class="container-fluid col-sm-12"  id="projects">
 
-        <div>
-          <h1>Cool projects</h1>
-          <h2>Click the thumbnail to visit the project page</h2>
-        </div>
-
-        <div align="center">
+        <div class="resume">
           <div>
-            <a href="http://159.203.29.155:3000/"><img class="img-thumbnail thumb-hover" src="images/api-thumb.png" style="width:200px;margin:40px 60px 0px 60px;"></a>
-            <h3>Finance API</h3>
+            <h1>Cool projects</h1>
+            <h2>Click the thumbnail to visit the project page</h2>
+          </div>
+
+          <div align="center">
+            <div>
+              <a href="http://159.203.29.155:3000/"><img class="img-thumbnail thumb-hover" src="images/api-thumb.png" style="width:200px;margin:40px 60px 0px 60px;"></a>
+              <h3>Finance API</h3>
+            </div>
           </div>
         </div>
 
       </div>
 
 
-      <div class="container-fluid col-sm-12 resume"  style="background-color:rgb(204, 187, 153);" id="social">
+      <div class="container-fluid col-sm-12"  style="background-color:rgb(204, 187, 153);" id="contact">
 
-        <div align="center" style="vertical-align:center;">
-          <a href="https://angel.co/phil-jauvin"><i class="fa fa-angellist fa-5x"></i></a>
-          <a href="https://github.com/phil-jauvin"><i class="fa fa-github fa-5x"></i></a>
-          <a href="https://twitter.com/PhilJauvin"><i class="fa fa-twitter fa-5x"></i></a>
-        </div>
+        <div class="resume">
 
-        <div>
-          <form action="http://formspree.io/philippejauvin@gmail.com" method="POST">
-          <input type="text" name="name">
-          <input type="email" name="_replyto">
-          <textarea class="form-control" rows="5" id="comment"></textarea>
-          <input type="submit" value="Send">
+          <form role="form" action="http://formspree.io/philippejauvin@gmail.com" method="POST">
+
+            <div class="col-sm-12">
+
+              <div class="col-sm-4 col-sm-offset-4">
+                <div class="form-group col-sm-6">
+                  <input type="text" name="name" placeholder="Name" class="contact-form">
+                </div>
+
+                <div class="form-group col-sm-6">
+                  <input type="email" name="_replyto" placeholder="Email@example.com" class="contact-form">
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="col-sm-12">
+
+              <div class="form-group col-sm-offset-1 col-sm-10">
+                <textarea class="form-control contact-form" rows="5" id="message" placeholder="Type a message for me"></textarea>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-default">Submit</button>
+
           </form>
+
         </div>
 
       </div>
@@ -134,6 +156,9 @@
       <div class="container-fluid col-sm-12 p-footer">
 
         <div align="center" style="vertical-align:center;">
+          <a href="https://angel.co/phil-jauvin"><i class="fa fa-angellist"></i></a>
+          <a href="https://github.com/phil-jauvin"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/PhilJauvin"><i class="fa fa-twitter"></i></a>
         </div>
 
       </div>
