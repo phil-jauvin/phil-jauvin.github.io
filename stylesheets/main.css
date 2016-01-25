@@ -42,6 +42,10 @@ a,a:hover{
   margin:40px 30px 40px 30px;
 }
 
+.fa-brown{
+  color:rgb(204, 187, 153);
+}
+
 .jumbotron{
   color:floralwhite;
   text-align:left;
