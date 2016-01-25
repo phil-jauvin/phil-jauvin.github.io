@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html>
+<html ng-app="portfolio">
 
   <head>
 
@@ -20,8 +20,8 @@
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet' type='text/css'>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
     <!-- Google maps -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
@@ -29,9 +29,14 @@
     <!-- Smooth scrolling -->
     <script src="./js/anchorscroll.js"></script>
 
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+
   </head>
 
-  <body>
+  <body ng-controller="FormController">
+
     <div class="bg-parl">
     <div class="jumbotron">
 
@@ -48,6 +53,7 @@
           <h2 id="toolbutton"><a href="#tools">Tools I use</a></h2>
           <h2 id="projectbutton"><a href="#projects">Projects</a></h2>
           <h2 id="socialbutton"><a href="#contact">Contact</a></h2>
+          <h2><a href="#social">Social media</a></h2>
         </div>
 
       </div>
@@ -62,7 +68,6 @@
         <div class="col-sm-12 resume">
           <div class="col-sm-9">
             <h2>I'm a Developer who likes to build dynamic websites and apps.</h2>
-            <h2>Right now I'm looking for an entry level Developer job (local or remote)</h2>
           </div>
 
           <div style="text-align:centre" class="col-sm-3">
@@ -73,42 +78,61 @@
       </div>
 
 
-      <div class="container-fluid col-sm-12" id="tools" style="background-color: rgb(106, 115, 137);color:floralwhite">
+      <div class="container-fluid col-sm-12 resume" id="tools" style="background-color: rgb(106, 115, 137);color:floralwhite">
 
-          <div class="resume">
-            <div class="container col-sm-12" style="margin-top:20px;">
-
-              <div style="vertical-align:middle;" class="col-sm-6">
-                <h2>
-                  My apps mainly use the MEAN stack (MongoDB, Express.Js, Angular.Js, Node.Js)
-                </h2>
+              <div class="col-sm-12">
+                <h1>Tools I use</h1>
               </div>
 
-              <img class="img-responsive col-sm-6" src="./images/tech_logo.svg" alt="1738" style="vertical-align:middle;">
+              <div style="vertical-align:middle;margin-bottom:50px;" class="col-sm-3 col-sm-offset-2">
+                <h2><i class="fa fa-code" style="margin:0px;"></i></h2>
+                <h2>Front end</h2>
+                <h3>Angular</h3>
+                <h3>JQuery</h3>
+                <h3>Bootstrap</h3>
+              </div>
 
-            </div>
+              <div style="vertical-align:middle;margin-bottom:50px;" class="col-sm-2">
+                <h2><i class="fa fa-terminal" style="margin:0px;"></i></h2>
+                <h2>Back end</h2>
+                <h3>Node</h3>
+                <h3>Express</h3>
+                <h3>MongoDB</h3>
+              </div>
 
-            <div class="col-sm-12" style="margin-bottom:20px;">
-              <h2>I'm also familiar with Bootstrap and JQuery</h2>
-              <h2>You should <u><a href="">check out my Resume</a></u></h2>
-            </div>
-          </div>
+              <div style="vertical-align:middle;margin-bottom:50px;" class="col-sm-3">
+                <h2><i class="fa fa-cogs" style="margin:0px;"></i></h2>
+                <h2>Other</h2>
+                <h3>Python</h3>
+                <h3>Java</h3>
+                <h3>Linux</h3>
+              </div>
 
       </div>
 
-      <div class="container-fluid col-sm-12"  id="projects">
+      <div class="container col-sm-12 resume"  id="projects">
 
-        <div class="resume">
-          <div>
-            <h1>Cool projects</h1>
-            <h2>Click the thumbnail to visit the project page</h2>
+        <div class="col-sm-12">
+          <h1>Here's some of the cool stuff I've built</h1>
+        </div>
+
+        <div style="vertical-align:middle;margin-bottom:50px;" class="col-sm-3 col-sm-offset-2">
+          <a href="#" data-toggle="modal" data-target="#flatstrmodal"><img class="img-thumbnail thumb" src="images/flatstr.jpg" alt="1738"></a>
+          <h3>Flatstr</h3>
+
+          <!-- Modal that displays the new form directive -->
+          <div id="flatstrmodal" class="modal fade" role="dialog">
+            <flatstr-modal></flatstr-modal>
           </div>
+        </div>
 
-          <div style="text-align:centre">
-            <div>
-              <a href="http://159.203.29.155:3000/"><img class="img-thumbnail thumb-hover" src="images/api-thumb.png" alt="1738" style="width:200px;margin:40px 60px 0px 60px;"></a>
-              <h3>Finance API</h3>
-            </div>
+        <div style="vertical-align:middle;margin-bottom:50px;" class="col-sm-3 col-sm-offset-2">
+          <a href="#" data-toggle="modal" data-target="#kayakmodal"><img class="img-thumbnail thumb" src="images/kayak.jpg" alt="1738"></a>
+          <h3>Ka-yak</h3>
+
+          <!-- Modal that displays the new form directive -->
+          <div id="kayakmodal" class="modal fade" role="dialog">
+            <kayak-modal></kayak-modal>
           </div>
         </div>
 
@@ -128,15 +152,15 @@
               <div class="col-sm-offset-1 col-sm-10">
 
                 <div class="form-group">
-                  <input class="col-xs-12 contact-form input-lg" type="text" name="name" placeholder="Name">
+                  <input class="col-xs-12 contact-form input-lg" type="text" name="name" placeholder="Name" required>
                 </div>
 
                 <div class="form-group">
-                  <input class="col-xs-12 contact-form input-lg" type="email" name="_replyto" placeholder="you@domain.net">
+                  <input class="col-xs-12 contact-form input-lg" type="email" name="_replyto" placeholder="you@domain.net" required>
                 </div>
 
                 <div class="form-group">
-                  <textarea class="form-control contact-form input-lg" rows="5" id="message" placeholder="Type a nice message..."></textarea>
+                  <textarea class="form-control contact-form input-lg" rows="5" id="message" placeholder="Type a nice message..." required></textarea>
                 </div>
 
               </div>
@@ -152,12 +176,12 @@
       </div>
 
 
-      <div class="container-fluid col-sm-12 p-footer">
+      <div class="container-fluid col-sm-12 p-footer" id="social">
 
         <div class="socialmedia">
-          <a href="https://angel.co/phil-jauvin"><i class="fa fa-angellist"></i></a>
-          <a href="https://github.com/phil-jauvin"><i class="fa fa-github"></i></a>
-          <a href="https://twitter.com/PhilJauvin"><i class="fa fa-twitter"></i></a>
+          <a href="https://angel.co/phil-jauvin"><i class="fa fa-angellist social"></i></a>
+          <a href="https://github.com/phil-jauvin"><i class="fa fa-github social"></i></a>
+          <a href="https://twitter.com/PhilJauvin"><i class="fa fa-twitter social"></i></a>
         </div>
 
       </div>

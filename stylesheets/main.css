@@ -2,7 +2,7 @@ body{
   background-color: rgb(238, 238, 221);
 }
 
-h1,h2 {
+h1,h2,h3 {
     font-family: 'Kanit', sans-serif;
 }
 
@@ -10,20 +10,26 @@ a,a:hover{
   color:floralwhite;
 }
 
-i{
+.social{
   color:rgb(204, 187, 153);
 }
 
-i:hover{
+.social:hover{
   color:rgb(238, 238, 221);
 }
 
-.thumb-hover:hover{
+.thumb{
+  width:400px;
+  margin-top:40px;
+}
+
+.thumb:hover{
   background-color: rgb(106, 115, 137);
 }
 
 .fa{
   font-size:50px;
+  color:rgb(204, 187, 153);
   margin:40px 30px 40px 30px;
 }
 
