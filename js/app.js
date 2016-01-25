@@ -1,8 +1,5 @@
 var app = angular.module("portfolio",["ng"]);
 
-
-app.controller("FormController",function(){});
-
 app.directive("flatstrModal",function(){
 
   return{
