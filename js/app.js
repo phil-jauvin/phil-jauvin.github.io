@@ -1,12 +1,7 @@
 var app = angular.module("portfolio",["ng"]);
 
 
-app.controller("FormController",function(){
-
-
-  $scope.tits = true;
-
-});
+app.controller("FormController",function(){});
 
 app.directive("flatstrModal",function(){
 
