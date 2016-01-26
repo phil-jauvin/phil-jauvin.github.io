@@ -35,9 +35,8 @@
       <div class="container">
 
         <div class="row col-sm-4">
-          <h2 id="aboutbutton"><a href="#about">About me</a></h2>
-          <h2 id="toolbutton"><a href="#tools">Tools I use</a></h2>
           <h2 id="projectbutton"><a href="#projects">Projects</a></h2>
+          <h2 id="toolbutton"><a href="#tools">Tools I use</a></h2>
           <h2 id="socialbutton"><a href="#contact">Contact</a></h2>
           <h2><a href="#social">Social media</a></h2>
         </div>
@@ -49,20 +48,36 @@
 
     <div>
 
-      <div class="container-fluid col-sm-12" id="about">
+      <div class="container col-sm-12"  id="projects">
 
-        <div class="col-sm-12 resume">
-          <div class="col-sm-9">
-            <h2>I'm a Developer who likes to build dynamic websites and apps.</h2>
+        <div class="col-sm-12">
+          <h1>Select projects</h1>
+        </div>
+
+        <div class="resume">
+          <div class="col-sm-3 col-sm-offset-2 showcase">
+            <a href="#" data-toggle="modal" data-target="#flatstrmodal"><img class="img-thumbnail thumb" src="images/flatstr.jpg" alt="1738"></a>
+            <h3>Flatstr</h3>
+
+            <!-- Modal that displays the new form directive -->
+            <div id="flatstrmodal" class="modal fade" role="dialog">
+              <flatstr-modal></flatstr-modal>
+            </div>
           </div>
 
-          <div style="text-align:centre" class="col-sm-3">
-            <div id="googleMap" style="width:300px;height:300px;"></div>
+          <div class="col-sm-3 col-sm-offset-2 showcase">
+            <a href="#" data-toggle="modal" data-target="#kayakmodal"><img class="img-thumbnail thumb" src="images/kayak.jpg" alt="1738"></a>
+            <h3>Ka-yak</h3>
+
+            <!-- Modal that displays the new form directive -->
+            <div id="kayakmodal" class="modal fade" role="dialog">
+              <kayak-modal></kayak-modal>
+            </div>
           </div>
+
         </div>
 
       </div>
-
 
       <div class="container-fluid col-sm-12 resume" id="tools" style="background-color: rgb(106, 115, 137);color:floralwhite">
 
@@ -93,37 +108,6 @@
                 <h3>Java</h3>
                 <h3>Linux</h3>
               </div>
-
-      </div>
-
-      <div class="container col-sm-12"  id="projects">
-
-        <div class="col-sm-12">
-          <h1>Select projects</h1>
-        </div>
-
-        <div class="resume">
-          <div class="col-sm-3 col-sm-offset-2 showcase">
-            <a href="#" data-toggle="modal" data-target="#flatstrmodal"><img class="img-thumbnail thumb" src="images/flatstr.jpg" alt="1738"></a>
-            <h3>Flatstr</h3>
-
-            <!-- Modal that displays the new form directive -->
-            <div id="flatstrmodal" class="modal fade" role="dialog">
-              <flatstr-modal></flatstr-modal>
-            </div>
-          </div>
-
-          <div class="col-sm-3 col-sm-offset-2 showcase">
-            <a href="#" data-toggle="modal" data-target="#kayakmodal"><img class="img-thumbnail thumb" src="images/kayak.jpg" alt="1738"></a>
-            <h3>Ka-yak</h3>
-
-            <!-- Modal that displays the new form directive -->
-            <div id="kayakmodal" class="modal fade" role="dialog">
-              <kayak-modal></kayak-modal>
-            </div>
-          </div>
-
-        </div>
 
       </div>
 
@@ -167,10 +151,17 @@
 
       <div class="container-fluid col-sm-12 p-footer" id="social">
 
-        <div class="socialmedia">
-          <a href="https://angel.co/phil-jauvin"><i class="fa fa-angellist social"></i></a>
-          <a href="https://github.com/phil-jauvin"><i class="fa fa-github social"></i></a>
-          <a href="https://twitter.com/PhilJauvin"><i class="fa fa-twitter social"></i></a>
+        <div class="col-xs-12">
+          <a href="https://angel.co/phil-jauvin"><i class="fa fa-angellist social" style="margin-bottom:0px;"></i></a>
+          <a href="https://github.com/phil-jauvin"><i class="fa fa-github social" style="margin-bottom:0px;"></i></a>
+          <a href="https://twitter.com/PhilJauvin"><i class="fa fa-twitter social" style="margin-bottom:0px;"></i></a>
+        </div>
+
+        <div class="col-xs-12" style="color:floralwhite;margin-top:15px;margin-bottom:40px;">
+          <h4 class="col-xs-4 col-xs-offset-4">
+            I'm a Developer/Math Nerd based in Ottawa,ON. <br>
+            When I'm not busy coding you can find me at the nearest Tim Hortons.
+          </h4>
         </div>
 
       </div>
