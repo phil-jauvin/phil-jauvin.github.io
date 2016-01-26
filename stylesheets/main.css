@@ -32,6 +32,10 @@ a,a:hover{
   background-color: rgb(106, 115, 137);
 }
 
+.panel{
+  width:90px;
+}
+
 .showcase{
   vertical-align:middle;
   margin-bottom:50px;
