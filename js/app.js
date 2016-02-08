@@ -17,3 +17,12 @@ app.directive("kayakModal",function(){
   }
 
 });
+
+app.directive("beatsModal",function(){
+
+  return{
+    templateUrl: "../directives/beats-modal.html",
+    restrict:"E"
+  }
+
+});
