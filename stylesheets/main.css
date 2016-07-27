@@ -61,6 +61,7 @@ a,a:hover{
   background-image: url("../images/ottawa.jpg");
   background-size: cover;
   min-height:100vh;
+  background-attachment: fixed;
 }
 
 #about,#tools,#projects,#contact{
